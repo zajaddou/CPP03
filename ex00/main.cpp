@@ -1,24 +1,15 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/21 13:21:29 by zajaddou          #+#    #+#             */
-/*   Updated: 2026/01/02 15:53:34 by zajaddou         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "ClapTrap.hpp"
-
 
 int main(void)
 {
     ClapTrap a("A");
+    ClapTrap b("B");
 
     a.attack("B");
-    a.beRepaired(1);
-    a.takeDamage(1);
-    return 0;
-}
+    b.takeDamage(10);
+    b.attack("C");
+    b.takeDamage(10);
+    b.beRepaired(10);
+    return (0);
+};

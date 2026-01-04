@@ -1,41 +1,30 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/02 11:16:15 by zajaddou          #+#    #+#              #
-#    Updated: 2026/01/02 15:55:43 by zajaddou         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+NAME		= claptrap
 
-NAME    = ClapTrap
+CC			= c++
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
-CC      = c++
-CFLAGS  = -Wall -Wextra -Werror -std=c++98
+SRCS		= main.cpp ClapTrap.cpp
+OBJS		= $(SRCS:.cpp=.o)
 
-SRC     = main.cpp ClapTrap.cpp
-
-OBJ     = $(SRC:.cpp=.o)
+RM			= rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+$(NAME): $(OBJS) ClapTrap.hpp
+	$(CC) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.cpp ClapTrap.hpp
-	@$(CC) $(CFLAGS) -c $< -o $@
+%.o: %.cpp
+	$(CC) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	@rm -f $(OBJ)
+	$(RM) $(OBJS)
 
 fclean: clean
-	@rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 
 run: all clean
 	@clear
 	@./$(NAME)
-	@rm $(NAME)
+	@rm -f $(NAME)
