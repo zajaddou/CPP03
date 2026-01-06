@@ -3,6 +3,8 @@
 
 int main(void)
 {
-    ScavTrap a("A");
+    ScavTrap a("qwerty");
+
+    ScavTrap b(a);
     return (0);
 };
