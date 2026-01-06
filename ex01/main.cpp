@@ -3,13 +3,6 @@
 
 int main(void)
 {
-    ClapTrap a("A");
-    ClapTrap b("B");
-
-    a.attack("B");
-    b.takeDamage(10);
-    b.attack("C");
-    b.takeDamage(10);
-    b.beRepaired(10);
+    ScavTrap a("A");
     return (0);
 };

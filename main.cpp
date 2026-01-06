@@ -2,31 +2,31 @@
 #include <iostream>
 
 
-class A {
+class Animal {
     public:
-        static int s;
-        A(int i);
-
+        virtual void x() {
+            std::cout << "Animal Sound..." << std::endl;
+        }
 };
 
-A::A(int i)
+class Dog : public Animal {
+    public:
+        void x() {
+            std::cout << "Woof!" << std::endl;
+        }
+};
+
+class Cat : public Animal {
+    public:
+        void x() {
+            std::cout << "Meow!" << std::endl;
+        }
+};
+
+int main()
 {
-    s = i;
-};
+    Animal *p = new Cat;
 
-class B : public A {
-   int bar;
-};
-
-
-int main(void)
-{
-    A a;
-    B b;
-
-    a = b;
-
-    std::cout << "A : " << sizeof(a) << std::endl;
-    std::cout << "B : " << sizeof(b) << std::endl;
-    return 0;
+    p->x();
 }
+
