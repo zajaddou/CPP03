@@ -3,7 +3,7 @@
 
 ClapTrap::ClapTrap(const std::string &name)
 {
-    std::cout << "ClapTrap Name Constructor called" << std::endl;
+    std::cout << "ClapTrap " << name << " Constructor called" << std::endl;
     this->name = name;
     this->HitPoints = 10;
     this->EnergyPoints = 10;

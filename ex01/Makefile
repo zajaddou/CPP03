@@ -11,16 +11,16 @@ RM			= rm -f
 all: $(NAME)
 
 $(NAME): $(OBJS) ClapTrap.hpp ScavTrap.hpp
-	$(CC) $(CXXFLAGS) $(OBJS) -o $(NAME)
+	@$(CC) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
 %.o: %.cpp
-	$(CC) $(CXXFLAGS) -c $< -o $@
+	@$(CC) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJS)
+	@$(RM) $(OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 
