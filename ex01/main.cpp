@@ -3,8 +3,17 @@
 
 int main(void)
 {
-    ScavTrap a("qwerty");
+    std::cout << "-------------------------------------------------------" << std::endl;
+    std::cout << "                  TESTING SCAVTRAP                     " << std::endl;
+    std::cout << "-------------------------------------------------------" << std::endl;
+    {
+        ScavTrap serena("Serena");
+        
+        serena.attack("Target A");
+        serena.takeDamage(10);
+        serena.beRepaired(10);
+        serena.guardGate();
+    }
 
-    ScavTrap b(a);
     return (0);
-};
+}
