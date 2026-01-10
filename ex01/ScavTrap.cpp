@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/10 14:16:40 by zajaddou          #+#    #+#             */
+/*   Updated: 2026/01/10 14:16:43 by zajaddou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
@@ -15,7 +26,7 @@ ScavTrap::ScavTrap(const std::string &name)
     this->EnergyPoints = 50;
     this->AttackDamage = 20;
     this->name = name;
-    std::cout << "ScavTrap " << name << " Constructor called" << std::endl;
+    std::cout << "ScavTrap " << name << " Constructor called\n" << std::endl;
 }
 
 ScavTrap::~ScavTrap()

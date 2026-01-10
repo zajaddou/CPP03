@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/10 14:18:49 by zajaddou          #+#    #+#             */
+/*   Updated: 2026/01/10 14:18:52 by zajaddou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
@@ -14,7 +25,7 @@ FragTrap::FragTrap(const std::string &name) : ClapTrap(name)
     this->HitPoints = 100;
     this->EnergyPoints = 100;
     this->AttackDamage = 30;
-    std::cout << "FragTrap " << name << " Constructor called" << std::endl;
+    std::cout << "FragTrap " << name << " Constructor called\n" << std::endl;
 }
 
 FragTrap::~FragTrap()

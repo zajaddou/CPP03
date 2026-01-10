@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/10 14:19:07 by zajaddou          #+#    #+#             */
+/*   Updated: 2026/01/10 14:25:46 by zajaddou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 
 #include "ScavTrap.hpp"
 
@@ -54,6 +66,5 @@ void ScavTrap::attack(const std::string &target)
     
     this->EnergyPoints--;
     
-    std::cout << "ScavTrap " << this->name << " attacks " << target 
-              << ", causing " << this->AttackDamage << " points of damage!" << std::endl;
+    std::cout << "ScavTrap " << this->name << " attacks " << target << ", causing " << this->AttackDamage << " points of damage!" << std::endl;
 }

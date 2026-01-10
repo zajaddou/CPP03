@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/10 14:16:03 by zajaddou          #+#    #+#             */
+/*   Updated: 2026/01/10 14:16:06 by zajaddou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
@@ -10,17 +21,15 @@ int main(void)
 
         ClapTrap clappy("Clappy");
         
-        std::cout << "\n[ ACTIONS ]" << std::endl;
         clappy.attack("Target A");
         clappy.takeDamage(5);
         clappy.beRepaired(5);
+
+        clappy.takeDamage(10);
+        clappy.attack("Target B");
+        clappy.beRepaired(10);
         
-        // Test edge cases (No Energy or No HP)
-        clappy.takeDamage(10);       // Should die
-        clappy.attack("Target B");   // Should fail (dead)
-        clappy.beRepaired(10);       // Should fail (dead)
-        
-        std::cout << "\n[ DESTRUCTION ]" << std::endl;
+        std::cout << std::endl;
     }
 
     return (0);

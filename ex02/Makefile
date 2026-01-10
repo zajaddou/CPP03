@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/01/10 14:19:03 by zajaddou          #+#    #+#              #
+#    Updated: 2026/01/10 14:19:04 by zajaddou         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME		= FragTrap
 
 CC			= c++
@@ -6,7 +18,7 @@ CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 SRCS		= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
-RM			= rm -f
+RM			= rm -rf
 
 all: $(NAME)
 

@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/10 14:19:31 by zajaddou          #+#    #+#             */
+/*   Updated: 2026/01/10 14:20:17 by zajaddou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
@@ -50,8 +61,7 @@ void ClapTrap::attack(const std::string &target)
     
     this->EnergyPoints--;
     
-    std::cout << "ClapTrap " << this->name << " attacks " << target 
-              << ", causing " << this->AttackDamage << " points of damage!" << std::endl;
+    std::cout << "ClapTrap " << this->name << " attacks " << target << ", causing " << this->AttackDamage << " points of damage!" << std::endl;
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
