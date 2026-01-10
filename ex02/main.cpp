@@ -1,10 +1,14 @@
-
+#include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 
 int main(void)
 {
-    ScavTrap a("qwerty");
+    FragTrap a("Fraggy");
 
-    ScavTrap b(a);
+    a.highFivesGuys();
+    a.attack("Target");
+    a.takeDamage(30);
+    a.beRepaired(20);
+    
     return (0);
-};
+}
