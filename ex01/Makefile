@@ -27,4 +27,4 @@ re: fclean all
 run: all clean
 	@clear
 	@./$(NAME)
-	@rm -f $(NAME)
+	@$(RM) $(NAME)
