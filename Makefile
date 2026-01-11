@@ -17,4 +17,10 @@ clean_all:
 	@make -C ex02 fclean
 	@echo "All directories cleaned."
 
+
+push:
+	@git add .
+	@git commit -m "Update"
+	git push origin main
+
 .PHONY: all ex00 ex01 ex02 clean_all
