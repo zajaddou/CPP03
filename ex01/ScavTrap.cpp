@@ -14,17 +14,17 @@
 
 ScavTrap::ScavTrap() : ClapTrap()
 {
-    this->HitPoints = 100;
-    this->EnergyPoints = 50;
-    this->AttackDamage = 20;
+    this->hitPoints = 100;
+    this->energyPoints = 50;
+    this->attackDamage = 20;
     std::cout << "ScavTrap Default Constructor called" << std::endl;
 }
 
 ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name)
 {
-    this->HitPoints = 100;
-    this->EnergyPoints = 50;
-    this->AttackDamage = 20;
+    this->hitPoints = 100;
+    this->energyPoints = 50;
+    this->attackDamage = 20;
     std::cout << "ScavTrap " << name << " Constructor called\n" << std::endl;
 }
 
@@ -43,9 +43,9 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &src)
 {
     std::cout << "ScavTrap Copy Assignment Operator called" << std::endl;
     this->name = src.name;
-    this->HitPoints = src.HitPoints;
-    this->EnergyPoints = src.EnergyPoints;
-    this->AttackDamage = src.AttackDamage;
+    this->hitPoints = src.hitPoints;
+    this->energyPoints = src.energyPoints;
+    this->attackDamage = src.attackDamage;
     return (*this);
 };
 
@@ -56,13 +56,13 @@ void ScavTrap::guardGate()
 
 void ScavTrap::attack(const std::string &target)
 {
-    if (this->EnergyPoints <= 0 || this->HitPoints <= 0)
+    if (this->energyPoints <= 0 || this->hitPoints <= 0)
     {
         std::cout << "ScavTrap " << this->name << " cannot attack (No HP or Energy)!" << std::endl;
         return;
     }
     
-    this->EnergyPoints--;
+    this->energyPoints--;
     
-    std::cout << "ScavTrap " << this->name << " attacks " << target << ", causing " << this->AttackDamage << " points of damage!" << std::endl;
+    std::cout << "ScavTrap " << this->name << " attacks " << target << ", causing " << this->attackDamage << " points of damage!" << std::endl;
 }
