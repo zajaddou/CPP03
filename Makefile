@@ -21,6 +21,6 @@ clean_all:
 push:
 	@git add .
 	@git commit -m "Update"
-	git push
+	@git push
 
 .PHONY: all ex00 ex01 ex02 clean_all
