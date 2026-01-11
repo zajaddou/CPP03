@@ -23,9 +23,6 @@ class B : public A
         B(const B &src);
         B &operator=(const B &src);
         ~B();
-
-        void attack(const std::string &target);
-        void guardGate();
 };
 
 #endif

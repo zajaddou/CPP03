@@ -14,55 +14,31 @@
 
 B::B() : A()
 {
-    this->hitPoints = 100;
-    this->energyPoints = 50;
-    this->attackDamage = 20;
-    std::cout << "B Default Constructor called" << std::endl;
+    this->data = 100;
+    std::cout << "B Default Constructor" << std::endl;
 }
 
 B::B(const std::string &name) : A(name)
 {
-    this->hitPoints = 100;
-    this->energyPoints = 50;
-    this->attackDamage = 20;
-    std::cout << "B " << name << " Constructor called" << std::endl;
+    this->data = 100;
+    std::cout << "B " << name << " Constructor" << std::endl;
 }
 
 B::~B()
 {
-    std::cout << "B Destructor called" << std::endl;
+    std::cout << "B Destructor" << std::endl;
 }
 
 B::B(const B &src) : A(src)
 {
     *this = src;
-    std::cout << "B Copy Constructor called" << std::endl;
+    std::cout << "B Copy Constructor" << std::endl;
 }
 
 B &B::operator=(const B &src)
 {
-    std::cout << "B Copy Assignment Operator called" << std::endl;
+    std::cout << "B Copy Assignment Operator" << std::endl;
     this->name = src.name;
-    this->hitPoints = src.hitPoints;
-    this->energyPoints = src.energyPoints;
-    this->attackDamage = src.attackDamage;
+    this->data = src.data;
     return (*this);
 };
-
-void B::guardGate()
-{
-    std::cout <<  "B is now in Gate keeper mode" << std::endl;
-};
-
-void B::attack(const std::string &target)
-{
-    if (this->energyPoints <= 0 || this->hitPoints <= 0)
-    {
-        std::cout << "B " << this->name << " cannot attack (No HP or Energy)!" << std::endl;
-        return;
-    }
-    
-    this->energyPoints--;
-    
-    std::cout << "B " << this->name << " attacks " << target << ", causing " << this->attackDamage << " points of damage!" << std::endl;
-}

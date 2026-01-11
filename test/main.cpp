@@ -14,5 +14,5 @@
 
 int main(void)
 {
-    B();
+    B b;
 }
