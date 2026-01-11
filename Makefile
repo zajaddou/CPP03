@@ -17,4 +17,4 @@ push:
 	@git push
 	@clear
 
-.PHONY: all ex00 ex01 ex02 clean_all
+.PHONY: all ex00 ex01 ex02
