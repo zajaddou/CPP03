@@ -11,13 +11,6 @@ all:
 2:
 	@make -C ex02 run
 
-clean_all:
-	@make -C ex00 fclean
-	@make -C ex01 fclean
-	@make -C ex02 fclean
-	@echo "All directories cleaned."
-
-
 push:
 	@git add .
 	@git commit -m "Update"
