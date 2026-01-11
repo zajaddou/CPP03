@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*   B.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -33,7 +33,7 @@ B::~B()
     std::cout << "B Destructor called" << std::endl;
 }
 
-B::B(const ScavTrap &src) : A(src)
+B::B(const B &src) : A(src)
 {
     *this = src;
     std::cout << "B Copy Constructor called" << std::endl;
