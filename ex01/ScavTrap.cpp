@@ -20,12 +20,11 @@ ScavTrap::ScavTrap() : ClapTrap()
     std::cout << "ScavTrap Default Constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap(const std::string &name)
+ScavTrap::ScavTrap(const std::string &name) : ClapTrap(name)
 {
     this->HitPoints = 100;
     this->EnergyPoints = 50;
     this->AttackDamage = 20;
-    this->name = name;
     std::cout << "ScavTrap " << name << " Constructor called\n" << std::endl;
 }
 
