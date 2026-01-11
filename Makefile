@@ -11,6 +11,9 @@ all:
 2:
 	@make -C ex02 run
 
+3:
+	@make -C test run
+
 push:
 	@git add .
 	@git commit -m "Update"
