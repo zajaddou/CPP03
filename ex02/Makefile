@@ -6,7 +6,7 @@
 #    By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/10 14:19:03 by zajaddou          #+#    #+#              #
-#    Updated: 2026/01/10 14:19:04 by zajaddou         ###   ########.fr        #
+#    Updated: 2026/01/12 13:58:45 by zajaddou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,8 +35,3 @@ fclean: clean
 	@$(RM) $(NAME)
 
 re: fclean all
-
-run: all clean
-	@clear
-	@./$(NAME)
-	@$(RM) $(NAME)
