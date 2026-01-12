@@ -6,7 +6,7 @@
 /*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 14:16:21 by zajaddou          #+#    #+#             */
-/*   Updated: 2026/01/12 12:49:37 by zajaddou         ###   ########.fr       */
+/*   Updated: 2026/01/12 12:52:12 by zajaddou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int main(void)
 {
-    ScavTrap s("Serena");
+    ScavTrap s("S");
 
-    s.attack("Target A");
+    s.attack("T");
     s.takeDamage(10);
     s.beRepaired(10);
     s.guardGate();
