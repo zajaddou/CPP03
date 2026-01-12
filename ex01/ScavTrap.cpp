@@ -6,7 +6,7 @@
 /*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 14:16:40 by zajaddou          #+#    #+#             */
-/*   Updated: 2026/01/10 14:16:43 by zajaddou         ###   ########.fr       */
+/*   Updated: 2026/01/12 12:11:02 by zajaddou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ ScavTrap::~ScavTrap()
 
 ScavTrap::ScavTrap(const ScavTrap &src) : ClapTrap(src)
 {
-    *this = src;
     std::cout << "ScavTrap Copy Constructor called" << std::endl;
 }
 

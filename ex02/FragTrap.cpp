@@ -6,7 +6,7 @@
 /*   By: zajaddou <zajaddou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 14:18:49 by zajaddou          #+#    #+#             */
-/*   Updated: 2026/01/10 14:18:52 by zajaddou         ###   ########.fr       */
+/*   Updated: 2026/01/12 12:05:14 by zajaddou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ FragTrap::~FragTrap()
 
 FragTrap::FragTrap(const FragTrap &src) : ClapTrap(src)
 {
-    *this = src;
     std::cout << "FragTrap Copy Constructor called" << std::endl;
 }
 
